@@ -1,0 +1,1 @@
+﻿<meta http-equiv="refresh" content="0;url=news_more.asp?lm2=85"> 

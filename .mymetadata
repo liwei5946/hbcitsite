@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="hbcitsite"
+  id="myeclipse.1316674394717"
+  context-root="/hbcitsite"
+  j2ee-spec="5.0"
+  archive="hbcitsite.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

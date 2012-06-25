@@ -1,0 +1,175 @@
+DIV,ul,li {
+		BORDER: 0px; PADDING: 0px; MARGIN: 0px;
+}
+A:hover {
+	COLOR: #407ecb; TEXT-DECORATION: underline; 
+}
+A:visited {
+	COLOR: #333333 
+}
+A {
+	COLOR: #333333   ; TEXT-DECORATION: none
+}
+
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.area {
+	MARGIN: 0px auto; WIDTH: 951px; background-color: #ffffff; 
+	BORDER-RIGHT:#666666   1px solid;  BORDER-LEFT: #666666  1px solid; 
+}
+#top{
+	width:950px; height:170px; background:url(../images/a-top.jpg) center no-repeat;
+	}
+
+#row1{
+
+	}
+#row1 .col1{
+	float:left;
+	}
+#row1 .col1 .row1{
+	background-image:url(../images/a-left01.jpg); height:193px; width:240px ;padding-left:0px; padding-top:3px;
+	}	
+#row1 .col1 .row2{
+	background-image:url(../images/a-left02.jpg); height:196px; width:240px;
+	}	
+
+#row1 .col1 .row2 ul{
+	padding-left:80px; width:120px
+	}	
+#row1 .col1 .row2 ul li{
+	list-style:url(../images/leftarror.jpg);width:120px  font-size:12px; line-height:150%
+	}	
+#row1 .col2{
+	FLOAT: left; WIDTH: 469px;background-image:url(../images/a-center01.jpg); height:390px ;
+	}
+#row1 .col3{
+	FLOAT: left;margin:0px;padding:0;FLOAT: left; WIDTH: 240px;height:390px;
+	}
+#row1 .col3 ul li{
+	list-style:none;
+	}
+
+#row2{
+	clear:both;height:85px;
+	}
+#row3{
+	clear:both;
+	}
+#row3 .col1{
+	float: left; background-image: url(../images/a-left04.jpg); height: 193px; width: 240px;
+	}
+#row3 .col2{
+	float: left; background-image: url(../images/a-center03.jpg); height: 193px; width: 468px;
+	}
+#row3 .col3{
+	float: left; background-image: url(../images/a-right03.jpg); height: 193px; width: 240px;
+	
+	}
+#row4{
+	clear:both;
+	}
+#row4 .col1{
+	float: left; background-image: url(../images/a-left05.jpg); height: 180px; width: 240px;
+
+	}
+#row4 .col2{
+	float: left; background-image: url(../images/a-center04.jpg); height: 180px; width: 469px
+	}
+#row4 .col3{
+	float: left; background-image: url(../images/a-left04.jpg); height: 193px; width: 240px;
+	}
+#row5{
+	clear:both;
+	}
+#row5 .col1{
+	float: left; background-image: url(../images/a-di1.jpg); height: 210px; width: 239px;
+	}
+#row5 .col2{
+	float: left; background-image: url(../images/a-di2.jpg); height: 210px; width: 239px;
+	}
+#row5 .col3{
+	float: left; background-image: url(../images/a-di3.jpg); height: 210px; width: 231px;
+	}
+#row5 .col4{
+	float: left; background-image: url(../images/a-di4.jpg); height: 210px; width: 238px;
+	}
+#bottom{
+	clear:both;
+	}	
+	
+	
+	
+
+
+
+/*
+	
+	
+.area .col0 {
+	WIDTH: 950px
+}
+.area .col1 {
+	FLOAT: left; WIDTH: 240px
+}
+.area .col2 {
+	FLOAT: right; WIDTH: 240px
+}
+.area .col3 {
+	FLOAT: left; WIDTH: 469px
+}
+.area .col4 {
+	FLOAT: left; WIDTH: 600px
+}
+.left {
+	FLOAT: left
+}	
+.right {
+	FLOAT: right
+}
+
+
+
+
+#buttom {BORDER-TOP: #b6cae3 1px solid; 
+	}
+.module {
+	BORDER-RIGHT:  #D5D5D5   1px solid; BORDER-TOP: #D5D5D5 0px solid; BORDER-LEFT: #D5D5D5 1px solid; BORDER-BOTTOM: #D5D5D5 1px solid
+}
+
+.Title {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 28px; HEIGHT: 30px; BACKGROUND-COLOR: #f2f6fb; TEXT-ALIGN: left;
+	
+
+}
+.Title1 {
+	  FONT-SIZE: 13px; padding-top:2px; COLOR: #DD0D12; LINE-HEIGHT: 25px; HEIGHT: 28px; BACKGROUND-COLOR: #f2f6fb; TEXT-ALIGN: left; background-image:url(image/titbg.jpg); padding-left:9px; ;font-weight: bold
+	 
+}
+.width1{ float:left; width:220px;}
+.width2{ float:left;width:333px;}
+.width3{ float:left;width:580px;}
+.titright{float:left; background-image:url(image/titbg.jpg); width:10px; height:30px }
+
+.moduleTitle {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold
+}
+
+
+.content2 {
+	BORDER-RIGHT:  #D5D5D5   1px solid; BORDER-TOP: #D5D5D5 1px solid; BORDER-LEFT: #D5D5D5 1px solid; BORDER-BOTTOM: #D5D5D5 1px solid;FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 20px;  TEXT-ALIGN: left; 
+}
+.modulefrom {
+	FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 1px;   TEXT-ALIGN: center; padding-top:0px; padding-left:5px
+}
+
+
+.blank9 {
+	CLEAR: both; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 2px
+}
+.blank1 {
+	CLEAR: both; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 5px
+}
+
+*/

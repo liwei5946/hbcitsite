@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+    
+  
+  <!-- 2.4版FCKeditor配置 -->
+  	<servlet>
+	   <servlet-name>Connector</servlet-name>
+	   <servlet-class>
+	    cn.edu.hbcit.servlets.ConnectorServlet 
+	    <!-- net.fckeditor.connector.ConnectorServlet  -->  
+	    
+	   </servlet-class>
+	   <load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>Connector</servlet-name>
+	   <url-pattern>
+	    /fckeditor/editor/filemanager/connectors/*
+	   </url-pattern>
+	</servlet-mapping>
+   
+   
+  <!-- 获取新闻 -->
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAddServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.UserAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserSelectServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.UserSelectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LmAddServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.LmAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LmDeleteServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.LmDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LmSelectServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.LmSelectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.ImageServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsAddServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GotoMainWeb</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.GotoMainWebServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getUserAllRightsServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.getUserAllRightsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateUserRightServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.updateUserRightServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LmUpdateServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.LmUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sendRedirectNewsAddServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.sendRedirectNewsAddServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendRedirectNewsEditServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.SendRedirectNewsEditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewSelectNewToModelPage</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.ViewSelectNewToModelPage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminNewsListServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.AdminNewsListServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsDeleteServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsDeleteServlet</servlet-class>
+  </servlet>
+
+
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetNewsServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.GetNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GotoMainIndexServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.GotoMainIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsLocateServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsLocateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsMBServletSelect</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsMBServletSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DBOperation</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.DBOperation</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsTjServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsTjServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsOntopServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsOntopServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsShServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsShServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsEditServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsEditServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsBumenCountServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsBumenCountServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SystemLogServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.SystemLogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IndexBanKuaiSetServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.IndexBanKuaiSetServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExportExcelServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.ExportExcelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SystemLogDeleteServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.SystemLogDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadLmImageServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.UploadLmImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsMoveupOrMovedownServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.NewsMoveupOrMovedownServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AnalyticsServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.AnalyticsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AnalyticsPageviewsServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.AnalyticsPageviewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AnalyticsVisitsServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.AnalyticsVisitsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AnalyticsVisitorsServlet</servlet-name>
+    <servlet-class>cn.edu.hbcit.servlets.AnalyticsVisitorsServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>NewsAddServlet</servlet-name>
+    <url-pattern>/servlet/NewsAddServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>UserAddServlet</servlet-name>
+    <url-pattern>/servlet/UserAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/servlet/UserDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/servlet/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserSelectServlet</servlet-name>
+    <url-pattern>/servlet/UserSelectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LmAddServlet</servlet-name>
+    <url-pattern>/servlet/LmAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LmDeleteServlet</servlet-name>
+    <url-pattern>/servlet/LmDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LmSelectServlet</servlet-name>
+    <url-pattern>/servlet/LmSelectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/servlet/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GotoMainWeb</servlet-name>
+    <url-pattern>/servlet/GotoMainWebServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getUserAllRightsServlet</servlet-name>
+    <url-pattern>/servlet/getUserAllRightsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateUserRightServlet</servlet-name>
+    <url-pattern>/servlet/updateUserRightServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LmUpdateServlet</servlet-name>
+    <url-pattern>/servlet/LmUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sendRedirectNewsAddServlet</servlet-name>
+    <url-pattern>/servlet/sendRedirectNewsAddServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>SendRedirectNewsEditServlet</servlet-name>
+    <url-pattern>/servlet/SendRedirectNewsEditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewSelectNewToModelPage</servlet-name>
+    <url-pattern>/servlet/ViewSelectNewToModelPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminNewsListServlet</servlet-name>
+    <url-pattern>/servlet/AdminNewsListServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>NewsDeleteServlet</servlet-name>
+    <url-pattern>/servlet/NewsDeleteServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetNewsServlet</servlet-name>
+    <url-pattern>/servlet/GetNewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GotoMainIndexServlet</servlet-name>
+    <url-pattern>/servlet/GotoMainIndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsLocateServlet</servlet-name>
+    <url-pattern>/servlet/NewsLocateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsMBServletSelect</servlet-name>
+    <url-pattern>/servlet/NewsMBServletSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DBOperation</servlet-name>
+    <url-pattern>/servlet/DBOperation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsTjServlet</servlet-name>
+    <url-pattern>/servlet/NewsTjServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsOntopServlet</servlet-name>
+    <url-pattern>/servlet/NewsOntopServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsShServlet</servlet-name>
+    <url-pattern>/servlet/NewsShServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsEditServlet</servlet-name>
+    <url-pattern>/servlet/NewsEditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsBumenCountServlet</servlet-name>
+    <url-pattern>/servlet/NewsBumenCountServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SystemLogServlet</servlet-name>
+    <url-pattern>/servlet/SystemLogServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>IndexBanKuaiSetServlet</servlet-name>
+    <url-pattern>/servlet/IndexBanKuaiSetServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>IndexBanKuaiSetServlet</servlet-name>
+    <url-pattern>/servlet/IndexBanKuaiSetServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportExcelServlet</servlet-name>
+    <url-pattern>/servlet/ExportExcelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SystemLogDeleteServlet</servlet-name>
+    <url-pattern>/servlet/SystemLogDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadLmImageServlet</servlet-name>
+    <url-pattern>/servlet/UploadLmImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsMoveupOrMovedownServlet</servlet-name>
+    <url-pattern>/servlet/NewsMoveupOrMovedownServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnalyticsServlet</servlet-name>
+    <url-pattern>/servlet/AnalyticsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnalyticsPageviewsServlet</servlet-name>
+    <url-pattern>/servlet/AnalyticsPageviewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnalyticsVisitsServlet</servlet-name>
+    <url-pattern>/servlet/AnalyticsVisitsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AnalyticsVisitorsServlet</servlet-name>
+    <url-pattern>/servlet/AnalyticsVisitorsServlet</url-pattern>
+  </servlet-mapping>
+
+
+  
+ <!-- user login -->
+ <!--  <filter> 
+        <filter-name>FirstFilter</filter-name > 
+        <filter-class>cn.edu.hbcit.util.CopartnerAuthFilter</filter-class> 
+    </filter> 
+    <filter-mapping> 
+        <filter-name>FirstFilter</filter-name > 
+        <url-pattern>/*</url-pattern > 
+    </filter-mapping > 
+ -->
+<!-- session-timeout -->
+<listener>
+  <listener-class>cn.edu.hbcit.listener.AnalyticsListener</listener-class>
+ </listener>
+  <session-config> 
+       <session-timeout> 120 </session-timeout> 
+  </session-config> 
+ <welcome-file-list>
+ 	<welcome-file>content.jsp</welcome-file>
+ </welcome-file-list>
+
+  
+</web-app>
